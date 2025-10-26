@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fees Management - School Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="logo.png" alt="School Logo" width="200" height="200">
+        <h1>Student Management System</h1>
+    </header>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="fees_management.html" class="active">Fees Management</a>
+        <a href="add_student.html">Add Student</a>
+        <a href="view_students.html">View Students</a>
+        <a href="contact_us.html">Contact Us</a>
+        <a href="about.html">About</a>
+    </nav>
+
+    <main>
+        <div class="container">
+            <h2>Fees Management</h2>
+
+            <div class="fees-section">
+                <h3>Record Fee Payment</h3>
+                <form id="feeForm" autocomplete="off">
+                    <div class="form-group">
+                        <label for="studentId">Student Roll Number:</label>
+                        <input type="text" id="studentId" name="studentId" required placeholder="Enter Roll Number">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="amount">Amount (₹):</label>
+                        <input type="number" id="amount" name="amount" required placeholder="Enter Amount" min="1">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="paymentDate">Payment Date:</label>
+                        <input type="date" id="paymentDate" name="paymentDate" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="paymentMode">Payment Mode:</label>
+                        <select id="paymentMode" name="paymentMode" required>
+                            <option value="">Select Payment Mode</option>
+                            <option value="Cash">Cash</option>
+                            <option value="Card">Card</option>
+                            <option value="UPI">UPI</option>
+                            <option value="Net Banking">Net Banking</option>
+                            <option value="Cheque">Cheque</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="remarks">Remarks (Optional):</label>
+                        <input type="text" id="remarks" name="remarks" placeholder="Add any remarks">
+                    </div>
+
+                    <button type="submit">Record Payment</button>
+                </form>
+                <div id="feeMessage"></div>
+            </div>
+
+            <div class="fees-history">
+                <h3>Payment History</h3>
+                <div style="overflow-x: auto;">
+                    <table id="feesTable">
+                        <thead>
+                            <tr>
+                                <th>Roll Number</th>
+                                <th>Student Name</th>
+                                <th>Class</th>
+                                <th>Amount</th>
+                                <th>Date</th>
+                                <th>Payment Mode</th>
+                                <th>Remarks</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="feesTableBody">
+                            <!-- Fee records will be displayed here -->
+                        </tbody>
+                    </table>
+                </div>
+                <div id="feedback"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Student Management System</p>
+    </footer>
+
+    <script>
+        // Set today's date as default
+        document.addEventListener('DOMContentLoaded', function() {
+            const today = new Date().toISOString().split('T')[0];
+            document.getElementById('paymentDate').value = today;
+        });
+    </script>
+</body>
+
+</html>

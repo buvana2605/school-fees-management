@@ -1,0 +1,372 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f8f9fa;
+    margin: 0;
+    color: #222;
+}
+
+header {
+    background-color: #228B22;
+    color: #fff;
+    padding: 24px 0 12px 0;
+    text-align: left;
+    box-shadow: 0 2px 8px rgba(34, 139, 34, 0.08);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    margin-right: 18px;
+    margin-bottom: 0;
+    display: block;
+    align-self: flex-start;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background: #1e6b1e;
+    padding: 0.7rem 0;
+    border-radius: 0 0 8px 8px;
+    margin-bottom: 20px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 18px;
+    border-radius: 4px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.navbar a.active,
+.navbar a:hover {
+    background: #FFD700;
+    color: #228B22;
+    text-decoration: none;
+}
+
+.fees-section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.fees-section h2 {
+    color: #228B22;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #228B22;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.fees-history {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.fees-history h2 {
+    color: #228B22;
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ...rest of your CSS... */
+
+main {
+    min-height: 60vh;
+    padding: 20px 0;
+    text-align: center;
+}
+
+main h1,
+main h2 {
+    color: #228B22;
+    margin-bottom: 16px;
+}
+
+main p {
+    font-size: 18px;
+    color: #444;
+}
+
+main img {
+    margin-top: 16px;
+    max-width: 90%;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+}
+
+form {
+    margin: 20px auto;
+    padding: 24px 20px;
+    background: #f4f4f4;
+    border-radius: 10px;
+    width: 340px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form label {
+    font-size: 16px;
+    color: #228B22;
+    text-align: left;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button,
+input[type="submit"] {
+    padding: 10px 20px;
+    background: #228B22;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.2s;
+}
+
+form button:hover,
+input[type="submit"]:hover {
+    background: #006400;
+}
+
+#message,
+#feedback {
+    margin-top: 10px;
+    font-size: 16px;
+    color: green;
+    min-height: 24px;
+}
+
+table {
+    margin: 20px auto;
+    width: 90%;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th,
+td {
+    padding: 12px 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #228B22;
+    color: #fff;
+    font-size: 17px;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+button {
+    padding: 6px 14px;
+    margin: 0 2px;
+    background: #228B22;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #006400;
+}
+
+footer {
+    background: #228B22;
+    color: #fff;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 16px;
+    margin-top: 30px;
+    box-shadow: 0 -2px 8px rgba(34, 139, 34, 0.08);
+}
+
+.dashboard-btn {
+    display: inline-block;
+    padding: 16px 32px;
+    background: #228B22;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(34, 139, 34, 0.10);
+    transition: background 0.2s, transform 0.2s;
+    margin: 0 10px;
+}
+
+.dashboard-btn:hover {
+    background: #006400;
+    transform: translateY(-2px) scale(1.04);
+}
+
+.contact-form-section,
+.contact-info-section {
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.contact-form-section h2,
+.contact-info-section h2 {
+    color: #228B22;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+form#contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: #f4f4f4;
+    padding: 24px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form#contactForm label {
+    font-size: 16px;
+    color: #228B22;
+    margin-bottom: 0.3rem;
+}
+
+form#contactForm input,
+form#contactForm textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+form#contactForm textarea {
+    resize: vertical;
+}
+
+form#contactForm button {
+    padding: 10px 20px;
+    background: #228B22;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.2s;
+}
+
+form#contactForm button:hover {
+    background: #006400;
+}
+
+.contact-info-section ul {
+    list-style: none;
+    padding: 0;
+    font-size: 16px;
+}
+
+.contact-info-section li {
+    margin-bottom: 0.7rem;
+}
+
+@media (max-width: 600px) {
+    form {
+        width: 95%;
+        padding: 16px 8px;
+    }
+
+    table {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    th,
+    td {
+        padding: 8px 4px;
+    }
+
+    .contact-info-section,
+    .contact-form-section {
+        margin-bottom: 1rem;
+    }
+
+    form#contactForm {
+        padding: 16px 8px;
+        max-width: 98%;
+    }
+}
+
+/* Center the contact form section heading */
+.contact-form-section h2 {
+    text-align: center;
+}

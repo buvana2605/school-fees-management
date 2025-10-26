@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Student - School Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="logo.png" alt="School Logo" width="200" height="200">
+        <h1>Student Management System</h1>
+    </header>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="fees_management.html">Fees Management</a>
+        <a href="add_student.html" class="active">Add Student</a>
+         <a href="view_students.html">View Students</a>
+        <a href="contact_us.html">Contact Us</a>
+        <a href="about.html">About</a>
+    </nav>
+    <main>
+        <form id="studentForm" autocomplete="off">
+            <label for="name">Student Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="roll">Roll Number:</label>
+            <input type="text" id="roll" name="roll" required>
+
+            <label for="class">Class:</label>
+            <input type="text" id="class" name="class" required>
+
+            <label for="marks">Grade:</label>
+            <input type="text" id="marks" name="marks" required>
+
+            <button type="submit">Add Student</button>
+        </form>
+        <div id="message"></div>
+        <div id="feedback"></div>
+    </main>
+    <footer>
+        <p>&copy; 2025 School Management System</p>
+    </footer>
+</body>
+
+</html>
